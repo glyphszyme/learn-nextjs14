@@ -5,7 +5,7 @@ export const metadata = {
     title: "Next Movies",
 };
 
-export const API_URL = "https://nomad-movies.nomadcoders.workers.dev/movies";
+import { API_URL } from "../../constants/api";
 
 async function getMovies() {
     const response = await fetch(API_URL);
